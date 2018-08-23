@@ -1,0 +1,80 @@
+<!--
+HTML을 만든 사람들은 본문과 본문을 설명하는 정보를 각기 다른 태그로 분리하기로 했다.
+> 본문은 body태그로, 본문을 설명하는 태그는 head 태그를 사용한다.
+> 또한, body태그와 head태그를 감싸는 하나의 태그 'html'태그를 두기로 약속했다.
+> 또한, 이 웹페이지가 HTML로서 만들어졌다는 것을 표시하기 위해서 문서의 시작에
+    <!doctype html>
+  를 표시하기로 했다.
+
+즉, 정리해보자면 HTML파일의 가장 기본적인 틀은
+    <!doctype html>
+    <html>
+    <head>
+      <title> 웹브라우저에 표시될 제목 </title>
+      <meta charset="utf-8">
+    </head>
+    <body>
+      .....
+    </body>
+    </html>
+--->
+
+<!doctype html>
+<html>
+<head>
+  <title> 주홍이의 HTML 레벨2!! </title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <p>
+    <h3>[1]HTML태그의 제왕 -> 'a태그'</h3>
+    HTML의 약자 HyperText Markup Language에서 HyperText가 의미하는 것이 바로 'a태그'!!<br>
+    a는 anchor(앵커)의 앞글자를 따온 것이다.<br>
+    즉, a태그의 기능은 바로 <u><strong>링크</strong></u>이다.<br>
+    <a href="https://www.naver.com" title="네이버로가즈아" target="_blank"> 네이버 </a><br>
+    <a href="_01_Basic.html"><strong>앞에서 공부한 파일 열기</strong></a><br>
+<!--
+    <a>태그
+    - 링크를 통해 다른 웹 페이지로 이동하거나, 문서 내에서 이동할 때 사용하는 태그.
+    - 아래와 같은 다양한 속성을 함께 사용한다.
+        1) href 속성
+        - hypertext reference의 약자로, 연결할 주소를 지정하는 속성이다.
+        > 반드시 큰 따옴표("")사이에 주소를 넣는다는 것에 주의하자!!
+
+        - 주소는 아래처럼 다양한 방식으로 넣을 수 있다.
+          ·절대 URL : 웹페이지 주소를 사용한다.
+           ex) <a href="https://www.naver.com">네이버</a>
+          ·상대 URL : 주로 같은 문서 안에서 링크를 만들 때 사용한다.
+           ex) <a href="right.html">오른쪽 페이지로</a>
+               <a href="../right.html">오른쪽 페이지로</a>
+               <a href="home/right.html">오른쪽 페이지로</a>
+          ·다른 형식의 Underline
+           ex) <a href="ftp://~~~~"> </a>+
+               <a href="mailto:~~~~"> </a>
+               <a href="file:~~~~"> </a>
+          ·id를 이용한 URL ★★★★ (특히 같은 문서 내에서 가리키는 id)
+           ex) <div id="top">ID를 이용한 URL</div> 라고 ID를 미리 지정한후 아래처럼 연결
+               <a href="#top"><맨위로 이동 </a>
+
+         2) title 속성
+         - 해당 링크에 마우스를 갖다대면, link에 대한 설명이 나온다.
+
+         3) target 속성
+         - 링크를 클릭할 때 창을 어떻게 열지 결정한다.
+         > _self : 연결 문서를 클릭한 창에서 연다.(Default)
+           _blank : 연결 문서를 새 창에서 연다.
+           _parent 부모(상위 레벨) 창에서 연다. (부모가 없으면 _self처럼)
+           _top : 가장 상위창에서 연다.
+                  (즉, 프레임을 무시하며, 전체 브라우저 창에서) (부모가 없으면 _self처럼)
+           framename : 지정된 프레임 안에서 염
+         ex) <a href="https://www.naver.com" target="_blank">네이버</a>
+
+      - <a>태그는 문자 뿐 아니라, <img>, <div> 등에도 링크를 걸 수 있다.
+        ex) <a href="https://www.naver.com"><img src="naver.png"></a>
+            <a href="https://www.naver.com"><div id="a">네이버</div></a>
+--->
+  </p>
+</body>
+</html>
